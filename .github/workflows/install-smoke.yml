@@ -8,6 +8,7 @@ on:
 jobs:
   install-smoke:
     name: install smoke
+    if: github.repository == 'ford-op/bp-sunnypilot'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout without submodules (mimic the installer)
